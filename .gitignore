@@ -1,3 +1,5 @@
+env.py
+
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudio,pycharm,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudio,pycharm,visualstudiocode
 
@@ -14,7 +16,7 @@
 
 # AWS User-specific
 .idea/**/aws.xml
-
+ 
 # Generated files
 .idea/**/contentModel.xml
 
@@ -690,7 +692,7 @@ FodyWeavers.xsd
 *.msi
 *.msix
 *.msm
-*.msp
+*.msp 
 
 # JetBrains Rider
 *.sln.iml
