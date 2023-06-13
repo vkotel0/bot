@@ -6,9 +6,9 @@ After=network.target
 User=vlad
 Group=vlad
 
-WorkingDirectory=/home/vlad/tele_bot/
-Environment="PYTHONPATH=/home/vlad/tele_bot/"
-ExecStart=/home/vladimir/tele_bot/.venv/bin/python /home/vlad/tele_bot/ubuntu18/main.py
+WorkingDirectory=/home/vlad/bot/
+Environment="PYTHONPATH=/home/vlad/bot/"
+ExecStart=/home/vladimir/bot/.venv/bin/python /home/vlad/bot/main.py
 
 [Install]
 WantedBy=multi-user.target
