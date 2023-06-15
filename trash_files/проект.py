@@ -1,4 +1,4 @@
-from env import TOKEN
+
 import random
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import Message
