@@ -4,18 +4,26 @@ from aiogram.types import \
     ReplyKeyboardRemove, \
     InlineKeyboardMarkup, \
     InlineKeyboardButton
+
+
+
+from aiogram.utils.callback_data import CallbackData
+
+inb_callback_data = CallbackData('inb', 'purpose')
        
-i1 = InlineKeyboardButton('👍', callback_data='i1')
-i2 = InlineKeyboardButton('👎', callback_data='i2')        
+i1 = InlineKeyboardButton('👍', callback_data=inb_callback_data.new('up'))
+i2 = InlineKeyboardButton('👎', callback_data=inb_callback_data.new('down'))        
 
 inlineKeyboard = InlineKeyboardMarkup().insert(i1).insert(i2)       
         
-b1 = KeyboardButton("Поделиться номером", request_location=True)
-b2 = KeyboardButton("Больше не хочу никого искать", request_contact=True)
-b3 = KeyboardButton("🙋‍♂️")
+b1 = KeyboardButton("Поделиться местом", request_location=True)
+b2 = KeyboardButton("поделиться номером", request_contact=True)
 keyboard = ReplyKeyboardMarkup(resize_keyboard=True)
-keyboard.add(b1).add(b2).add(b3)
+keyboard.add(b1).add(b2)
 
 
-keyboard2 = ReplyKeyboardMarkup(one_time_keyboard=True)
-keyboard2.insert(b1).insert(b2).insert(b3)
+#keyboard2 = ReplyKeyboardMarkup(one_time_keyboard=True)
+#keyboard2.insert(b1).insert(b2).insert(b3)
+
+
+
